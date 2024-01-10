@@ -1,8 +1,6 @@
-# 最終的なコード全体を示します。各部分には日本語でのコメントを付けて説明します。
-
 def knapsack(bids, m):
     """
-    動的計画法を用いてナップサック問題を解く関数。
+    動的計画法を用いてナップサック問題を解く関数
     bids: 入札額のリスト
     m: 出品数
 
@@ -35,7 +33,7 @@ def knapsack(bids, m):
 
 def calculate_payments(bids, m, allocation):
     """
-    VCGメカニズムによる支払い額を計算する関数。
+    VCGメカニズムによる支払い額を計算する関数
     bids: 入札額のリスト
     m: 出品数
     allocation: 全員が参加した場合の割当て

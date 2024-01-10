@@ -103,7 +103,7 @@ combinations = [(50, 30), (50, 50), (100, 30), (100, 50), (200, 30), (200, 50)]
 results = {}
 for num_bidders, num_goods in combinations:
     avg_time, avg_payment_sum = measure_performance(num_bidders, num_goods)
-    print(num_bidders, num_goods, avg_time, avg_payment_sum)
+    print(f"入札者数:{num_bidders}", f" 財の個数:{num_goods}", f" 平均計算時間:{avg_time}", f" 支払額総和平均:{avg_payment_sum}")
     results[(num_bidders, num_goods)] = (avg_time, avg_payment_sum)
 
 print(results)
